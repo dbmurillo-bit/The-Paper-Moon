@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="description" content="Cafetería, librería y espacio de música">
   <meta name="keywords" content="Libros, Cafeterías, Vinilos, Club de lectura, Jazz">
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Paper Moon | Cafebrería y Música</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&family=Spicy+Rice&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>The Paper Moon | Cafebrería y Música</title>
 </head>
-<!--AQUÍ INICIA EL CUERPO DE MI PÁGINA-->
-
 
 <body>
 
-    <!-- ========ENCABEZADO DE LA PÁGINA======== -->
-     <header class="header-The Paper Moon">
-        <div class="continer header-inicio">
-            <a href="#inicio" class="logo-The Paper Moon">
-                <img src="img/logo.png" alt="logo de The Paper Moon">
-            </a>
-                
-            <nav class="nav-The Paper Moon">
-                <ul>
-                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#cafebreria">Cafebrería</a></li>
-                    <li><a href="#vinilos">Vinilos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+  <!-- ======== ENCABEZADO DE LA PÁGINA ======== -->
+  <header class="header-The-Paper-Moon">
+    <div class="container header-inicio">
+      <a href="#inicio" class="logo-The-Paper-Moon">
+        <img src="img/logo.png" alt="logo de The-Paper-Moon">
+      </a>
 
-                <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
-                <i data-lucide="message-circle"></i> Pedir ahora
-                </button>
+      <nav class="nav-The-Paper-Moon">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#cafebreria">Cafebrería</a></li>
+          <li><a href="#vinilos">Vinilos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
 
-            </nav>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en The Paper Moon.')">
+          <i data-lucide="message-circle"></i> Pedir ahora
+        </button>
+      </nav>
+    </div>
+  </header>
 
+  <!-- ======== CONTENIDO PRINCIPAL ======== -->
+  <main>
 
+    <!-- ======== SECCIÓN DEL HERO ======== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inicio">
+        <div class="hero-text">
+          <p class="eyebrow">The Paper Moon</p>
+          <h1>Where stories find their soundtrack</h1>
+          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
+
+          <div class="hero-actions">
+            <a href="#cafebreria" class="btn primary">Ver productos</a>
+            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer más sobre The Paper Moon.')">Comprar por WhatsApp</button>
+          </div>
+
+          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
         </div>
 
+        <div class="hero-imagen">
+          <img src="XXX" alt="XXXXX">
+          <span class="tag tag-love">Hecho con cariño</span>
+          <span class="tag tag-custom">Pedidos personalizados</span>
+        </div>
+      </div>
+    </section>
 
-
-     </header>
-
-    
-<h1>Where stories find their soundtrack</h1>
-<p>The Paper Moon</p>
+  </main>
 
 </body>
 </html>
