@@ -39,33 +39,113 @@
   </header>
 
   <!-- ======== CONTENIDO PRINCIPAL ======== -->
+
   <main>
 
-    <!-- ======== SECCIÓN DEL HERO ======== -->
-    <section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">The Paper Moon</p>
-          <h1>Where stories find their soundtrack</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
-
-          <div class="hero-actions">
-            <a href="#cafebreria" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer más sobre The Paper Moon.')">Comprar por WhatsApp</button>
-          </div>
-
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
-        </div>
-
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
-        </div>
-      </div>
+   <!-- ======== SECCIÓN DEL HERO ======== -->
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDO A THE PAPER MOON</p>
+      <h1 class="intro-title" id="intro-title">Press play.<br><span>Turn the page.</span></h1>
+      <p class="intro-description">Una canción para cada página, una historia para cada momento.</p>
     </section>
 
+
+    <!-- ======== AQUÍ VAMOS A COLOCAR EL VÍDEO Y LAS DOS IMÁGENES ======== -->
+     <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="IMG/hero1.mp4"
+          aria-label="Video de presentación">
+          <source src="img/hero1.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> 01/LIBRERÍA</p>
+          <h2 class="media-card__title">UN ESPACIO PARA DESCUBRIR<br>NUEVOS MUNDOS</h2>
+          <a class="media-card__link" href="#contacto">Explorar libros <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/cafe.jpg"
+          alt="Fotografía de la cafetería"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">02/CAFETERÍA</p>
+          <h2 class="media-card__title">UN MOMENTO<br>PARA DISFRUTAR</h2>
+          <a class="media-card__link" href="#contacto">Descubrir el menú <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/vinilo.jpg"
+          alt="Fotografía que muestra la sección de música"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03/VINILOS</p>
+          <h2 class="media-card__title">CADA DISCO<br>CUENTA UNA HISTORIA</h2>
+          <a class="media-card__link" href="#contacto">Descubrir vinilos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
+
+
   </main>
+
+<!-- FOOTER O PIE DE PÁGINA-->
+ <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> The Paper Moon. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
 
 </body>
 </html>
