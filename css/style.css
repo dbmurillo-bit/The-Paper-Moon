@@ -302,7 +302,7 @@ h1, h2, h3 {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.65);
   color: #ffffff;
   font-size: 9px;
   font-weight: 600;
@@ -432,7 +432,7 @@ h1, h2, h3 {
 .benefit-card p { color: var(--muted); }
 
 .unicos{
-  background-color: var(--cream);
+  background-color: #71849B;
 }
 
 /*Testimonios, reseñas, etc*/
@@ -486,6 +486,47 @@ h1, h2, h3 {
   .testimonial-track { transform: none !important; gap: 1rem; }
   .testimonial-slide { min-width: 0; flex: 1; }
   .carousel-controls { display: none; }
+}
+
+/*contacto*/
+
+.contact-panel {
+  display: grid;
+  gap: 2rem;
+  background: #71849B;
+  border: 2px solid var(--blue);
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+.contact-text .btn { margin-top: 1.8rem; width: 100%; }
+.contact-info {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.04);
+}
+.contact-info ul { display: flex; flex-direction: column; gap: 1.2rem; }
+.contact-info li { display: flex; align-items: center; gap: .75rem; }
+.contact-info i {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fdf0d5;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+.contact-info a { 
+  font-weight: 700; 
+  color: var(--coral-dark); 
+  text-decoration: underline; 
+  text-decoration-color: var(--gold); }
+
+
+@media (min-width: 900px) {
+  .contact-panel { grid-template-columns: 1.1fr .9fr; padding: 2.5rem; }
+  .contact-text .btn { width: auto; }
 }
 
 
